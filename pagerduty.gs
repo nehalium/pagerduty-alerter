@@ -4,9 +4,6 @@ var PagerDuty = (function() {
   pagerduty.getData = getData;
   return pagerduty;
   
-  // Private members
-  var config = getConfig();
-  
   function getData(forDate) {
     var items = [];
     var result = executeQuery(getIncidentsQuery());
