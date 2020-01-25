@@ -1,4 +1,4 @@
-# pagerduty-alerter
+# PagerDuty Alerter
 
 ## Installation
 
