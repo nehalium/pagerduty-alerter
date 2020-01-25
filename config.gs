@@ -1,5 +1,3 @@
-var SHEET_CONFIG = "Config";
-
 var Config = (function() {
   // Public members  
   var config = {};
@@ -8,7 +6,7 @@ var Config = (function() {
   
   // Gets config values from spreadsheet
   function getConfig() {
-    var sheeter = new Sheeter(SHEET_CONFIG);
+    var sheeter = new Sheeter(Settings.sheets.config);
     var values = sheeter.getValues(2);
     var cfg = [];
     values.forEach(function(value) {
