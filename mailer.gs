@@ -19,7 +19,7 @@ var Mailer = (function() {
     else {
       message = {
         name: Config["mail.from"],
-        to: Config["mail.to.debug"], //to: params.to,
+        to: params.to,
         cc: Config["mail.cc"],
         subject: params.subject,
         body: params.body

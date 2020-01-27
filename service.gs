@@ -7,5 +7,5 @@ function main() {
 function load(date) {
   var data = PagerDuty.getData(date);
   Writer.write(data);
-  //PDMailer.mail(data);
+  PDMailer.mail(data);
 }

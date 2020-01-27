@@ -67,9 +67,9 @@ var PagerDuty = (function() {
       method: 'GET',
       muteHttpExceptions: true,
       headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/vnd.pagerduty+json;version=2',
-        'Authorization': 'Token token=' + Config['pagerduty.token']
+        'Content-Type': API.pagerduty.content_type,
+        'Accept': API.pagerduty.accept,
+        'Authorization': API.pagerduty.auth_sig + Config['pagerduty.token']
       }
     };
     var response = UrlFetchApp.fetch(API.pagerduty.url + query, options);
